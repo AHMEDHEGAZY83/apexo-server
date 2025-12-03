@@ -1,4 +1,10 @@
-#!/bin/sh
-unzip -o pocketbase.zip
+#!/bin/bash
+
+# Navigate to pocketbase folder (after unzip)
+cd pocketbase
+
+# Give execution permission to pocketbase binary
 chmod +x pocketbase
-./pocketbase serve --http=0.0.0.0:${PORT}
+
+# Start PocketBase
+./pocketbase serve --http="0.0.0.0:${PORT}"

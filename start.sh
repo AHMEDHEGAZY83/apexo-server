@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Navigate to pocketbase folder (after unzip)
+# Navigate to pocketbase folder
 cd pocketbase
 
-# Give execution permission to pocketbase binary
+# Make sure pocketbase is executable
 chmod +x pocketbase
 
-# Start PocketBase
-./pocketbase serve --http="0.0.0.0:${PORT}"
+# Start PocketBase with admin UI
+./pocketbase serve --http="0.0.0.0:${PORT}" --publicDir="pb_public"

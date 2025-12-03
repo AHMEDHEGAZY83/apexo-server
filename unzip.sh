@@ -1,2 +1,2 @@
 #!/bin/sh
-apk add unzip
+apt-get update && apt-get install -y unzip
